@@ -13,9 +13,7 @@ namespace SpeechWebGame.Tools
 
         public VoiceCapture(int sampleRate = 24000)
         {
-            //Model model = new Model(@"F:\VoskModels\vosk-model-ru-0.42");
-            Model model = new Model(@"F:\VoskModels\vosk-model-small-ru-0.22");
-            //Model model = new Model("vosk-model-small-ru-0.22");
+            Model model = new Model(@"VoskModels\vosk-model-small-ru-0.22");
             _recognizer = new VoskRecognizer(model, sampleRate);
             _recognizer.SetMaxAlternatives(3);
             _recognizer.SetWords(true);
