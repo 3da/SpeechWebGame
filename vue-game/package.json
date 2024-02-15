@@ -1,0 +1,22 @@
+{
+  "name": "speechgame",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.2.96",
+    "@microsoft/signalr": "^7.0.10",
+    "@microsoft/signalr-protocol-msgpack": "^7.0.10",
+    "vue": "^3.3.4",
+    "vuetify": "^3.3.14"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  }
+}

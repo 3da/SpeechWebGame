@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="vue-game\**" />
+    <Content Remove="vue-game\**" />
+    <EmbeddedResource Remove="vue-game\**" />
+    <None Remove="vue-game\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Data\city.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\city.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.MessagePack" Version="7.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="7.0.10" />
+    <PackageReference Include="NAudio" Version="2.1.0" />
+    <PackageReference Include="NAudio.Lame" Version="2.1.0" />
+    <PackageReference Include="NAudio.Vorbis" Version="1.5.0" />
+    <PackageReference Include="System.Speech" Version="7.0.0" />
+    <PackageReference Include="Vosk" Version="0.3.38" />
+  </ItemGroup>
+
+</Project>
