@@ -9,4 +9,7 @@ For example it shows calculation game.
 
 Для примера показана игра в таблицу умножения.
 
+Dependecies:
+- https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip
+
 <img src="screenshot.png" width="600"/>
